@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> 
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>UMSLHACK</title>
+    <script src="./UmslHackFinal.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+<style>
+    #map{
+        height: 400px;
+        width: 100%; 
+    }
+</style>
+<script src="https://cdn.jsdelivr.net/npm/lodash@4.17.5/lodash.min.js"></script>
+
+</head>
+<body>
+      <div class="header">
+
+            <img src="MapIcon.png" alt="Map Icon" 
+            style="float:right;width:80px;height:80px;">  
+            <img src="Food_ActivityIcon.png" alt="FOOD Act" 
+            style="float:left;width:80px;height:80px;">  
+                <center><h1 id="heading"><img src="WutToDoLogo-03.svg" alt="MainPic" width="500" height="600"></h1></center>
+                <center> <h6>At UMSL</h6></center> 
+                     
+            </div>
+           
+            
+            <div class="container">
+               
+                <div>
+                    <br/>
+                    <label>First Name</label>
+                    <input type="text" name="firstName" id="first-name" />
+                </div>
+                <br />
+                <div>
+                    <label>Last Name</label>
+                    <input type="text" name="lastName" id="last-name" />
+                </div>
+                <br />
+                <div>
+                    <center><label>Select What You Are Looking For:</label></center>
+                    
+                    <select name="selectWhatYouAreLookingFor:" id="select-what-you-are-looking-for">
+                        <option value=" " id=" "></option>
+                        <option value="Activity">Activities</option>
+                        <option value="food">Food/Drink</option>
+                    </select>
+                    
+                </div>    
+                <br />
+                <div>
+                    <label>Select Location:</label>
+                    <select name="selectLocation:" id="select-location:">
+                    <center>selectLocation</center>   
+                        <option name=" " id=" "></option>
+                        <option value="UMSL">UMSL</option>
+                        <option value="Off Campus">Off Campus</option>
+                        <option value="No Preference">No Preference</option>
+                    </select>
+                </div>
+                <br />    
+                <input type="button" value="Submit" onclick="viewMap()" />    
+                <br/>
+                <br/>
+                        
+            </div>
+            
+            
+
+
+
+
+    
+        <div id="map"></div>
+        <script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCP3yTdn8bOQD_Mcxqrf-sC2nK4i-r3H6g&callback=initMap">
+        </script>
+</body>
+</html>

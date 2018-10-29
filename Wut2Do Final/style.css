@@ -1,0 +1,25 @@
+body{
+    text-align: center;
+    font-family: helvetica;
+    font-size: 18px;
+}
+
+li{
+    list-style: none;
+    line-height: 2em;
+    text-align: left;
+}
+
+.header{
+    background:#0d3255;
+    border-bottom:#ccc 3px solid;
+    color: rgb(131, 180, 218);
+    padding:20px;
+}
+
+.container{
+    width:1200px;
+    margin:5px auto;
+    color:rgb(151, 229, 229);
+    background-color: rgb(15, 98, 131);
+}
